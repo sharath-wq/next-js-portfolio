@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Intro = () => {
     return (
-        <section>
+        <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
@@ -39,6 +39,18 @@ const Intro = () => {
                     </motion.span>
                 </div>
             </div>
+
+            <motion.p
+                className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+            >
+                <span className="font-bold">Hello, I'am Sharath Chandran.</span> I'am a{" "}
+                <span className="font-bold">self-taught </span>
+                <span className="font-bold">full-stack developer</span> form india. I enjoy building{" "}
+                <span className="italic">sites & apps</span>. My focus is{" "}
+                <span className="underline">React (Next.js), Node.js</span>.
+            </motion.p>
         </section>
     );
 };
