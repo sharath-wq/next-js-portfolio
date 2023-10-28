@@ -1,9 +1,9 @@
-
+import { Intro } from "@/components";
 
 export default function Home() {
-  return (
-    <main className="">
-
-    </main>
-  )
+    return (
+        <main className="">
+            <Intro />
+        </main>
+    );
 }
