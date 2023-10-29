@@ -64,16 +64,31 @@ const Intro = () => {
                     delay: 0.1,
                 }}
             >
-                <Link href="#contacts" className="bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full">
-                    Contact me here <BsArrowRight />
+                <Link
+                    href="#contacts"
+                    className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                >
+                    Contact me here <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
                 </Link>
-                <a href="" className="bg-white px-7 py-3 flex items-center gap-2 rounded-full">
-                    Download Resume <HiDownload />
+                <a
+                    href="/resume.pdf"
+                    download
+                    className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer border border-black/10"
+                >
+                    Download Resume <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
                 </a>
-                <a href="" className="bg-white p-4 flex items-center text-gray-700 gap-2 rounded-full">
+                <a
+                    href="https://www.linkedin.com/in/sharath-chandran-aa827b201/"
+                    target="_blank"
+                    className="bg-white p-4 flex items-center text-gray-700 gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer border border-black/10"
+                >
                     <BsLinkedin />
                 </a>
-                <a href="" className="bg-white p-4 flex items-center text-gray-700 gap-2 text-[1.35rem] rounded-full">
+                <a
+                    href="https://github.com/sharath-wq"
+                    target="_blank"
+                    className="bg-white p-4 flex items-center text-gray-700 gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer border border-black/10"
+                >
                     <FaGithubSquare />
                 </a>
             </motion.div>
