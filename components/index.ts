@@ -4,5 +4,6 @@ import SectionDivider from "./section-divider";
 import About from "./about";
 import Projects from "./projects";
 import Project from "./project";
+import Skills from "./skills";
 
-export { Header, Intro, SectionDivider, About, Projects, Project };
+export { Header, Intro, SectionDivider, About, Projects, Project, Skills };
