@@ -7,10 +7,12 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
 
 const Intro = () => {
+    const { ref } = useSectionInView("Home", 0.5);
     return (
-        <section className="mb-28 max-w-[50rem] text-center sm:mb-0">
+        <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
@@ -52,7 +54,7 @@ const Intro = () => {
             >
                 <span className="font-bold">Hello, I'am Sharath Chandran.</span> I'am a{" "}
                 <span className="font-bold">self-taught </span>
-                <span className="font-bold">full-stack developer</span> form india. I enjoy building{" "}
+                <span className="font-bold">full-stack developer</span> form India. I enjoy building{" "}
                 <span className="italic">sites & apps</span>. My focus is{" "}
                 <span className="underline">React (Next.js), Node.js</span>.
             </motion.h1>
