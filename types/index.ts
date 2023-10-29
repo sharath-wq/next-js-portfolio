@@ -1,6 +1,6 @@
 import { links } from "@/lib/data";
 import { StaticImageData } from "next/image";
-import { ReactNode } from "react";
+import { ReactNode, SetStateAction } from "react";
 
 export interface SectionHeaderProps {
     text: string;
@@ -22,4 +22,6 @@ export interface ActiveSectionContextProviderProps {
 export interface ActiveSectionContextType {
     activeSection: SectionName;
     setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+    timeOfLastClick: number;
+    setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 }
