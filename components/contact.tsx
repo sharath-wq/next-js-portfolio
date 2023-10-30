@@ -32,8 +32,19 @@ const Contact = () => {
             </p>
 
             <form action="" className="mt-10 flex flex-col">
-                <input type="email" placeholder="Your email" className="h-14 rounded-lg borderBlack px-4" />
-                <textarea placeholder="Your message" className="h-52 my-3 rounded-lg borderBlack p-4" />
+                <input
+                    type="email"
+                    required
+                    maxLength={500}
+                    placeholder="Your email"
+                    className="h-14 rounded-lg borderBlack px-4"
+                />
+                <textarea
+                    placeholder="Your message"
+                    className="h-52 my-3 rounded-lg borderBlack p-4"
+                    required
+                    maxLength={500}
+                />
                 <button
                     type="submit"
                     className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
