@@ -5,5 +5,6 @@ import About from "./about";
 import Projects from "./projects";
 import Project from "./project";
 import Skills from "./skills";
+import Experience from "./experience";
 
-export { Header, Intro, SectionDivider, About, Projects, Project, Skills };
+export { Header, Intro, SectionDivider, About, Projects, Project, Skills, Experience };
