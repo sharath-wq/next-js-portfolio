@@ -7,5 +7,6 @@ import Project from "./project";
 import Skills from "./skills";
 import Experience from "./experience";
 import Contact from "./contact";
+import SubmitBtn from "./submit-btn";
 
-export { Header, Intro, SectionDivider, About, Projects, Project, Skills, Experience, Contact };
+export { Header, Intro, SectionDivider, About, Projects, Project, Skills, Experience, Contact, SubmitBtn };

@@ -3,11 +3,14 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
-import { FaPaperPlane } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { sendEmail } from "@/actions/sendEmail";
+import SubmitBtn from "./submit-btn";
+import toast from "react-hot-toast";
 
 const Contact = () => {
     const { ref } = useSectionInView("Experience");
+
     return (
         <motion.section
             ref={ref}
@@ -31,16 +34,34 @@ const Contact = () => {
                 or through this form
             </p>
 
-            <form action="" className="mt-10 flex flex-col">
-                <input type="email" placeholder="Your email" className="h-14 rounded-lg borderBlack px-4" />
-                <textarea placeholder="Your message" className="h-52 my-3 rounded-lg borderBlack p-4" />
-                <button
-                    type="submit"
-                    className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
-                >
-                    Submit{" "}
-                    <FaPaperPlane className="text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />
-                </button>
+            <form
+                action={async (formData) => {
+                    const { data, error } = await sendEmail(formData);
+
+                    if (error) {
+                        toast.error(error);
+                        return;
+                    }
+                    toast.success("Email sent successfully!");
+                }}
+                className="mt-10 flex flex-col"
+            >
+                <input
+                    type="email"
+                    name="senderEmail"
+                    required
+                    maxLength={500}
+                    placeholder="Your email"
+                    className="h-14 rounded-lg borderBlack px-4"
+                />
+                <textarea
+                    placeholder="Your message"
+                    name="message"
+                    className="h-52 my-3 rounded-lg borderBlack p-4"
+                    required
+                    maxLength={500}
+                />
+                <SubmitBtn />
             </form>
         </motion.section>
     );
