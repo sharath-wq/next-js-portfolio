@@ -25,3 +25,8 @@ export interface ActiveSectionContextType {
     timeOfLastClick: number;
     setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
 }
+
+export interface ContactFormEmailProps {
+    message: string;
+    senderEmail: string;
+}
