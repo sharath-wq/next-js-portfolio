@@ -8,5 +8,6 @@ import Skills from "./skills";
 import Experience from "./experience";
 import Contact from "./contact";
 import SubmitBtn from "./submit-btn";
+import Footer from "./footer";
 
-export { Header, Intro, SectionDivider, About, Projects, Project, Skills, Experience, Contact, SubmitBtn };
+export { Header, Intro, SectionDivider, About, Projects, Project, Skills, Experience, Contact, SubmitBtn, Footer };
