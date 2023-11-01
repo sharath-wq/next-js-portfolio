@@ -6,6 +6,10 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
+import craftopia from "@/public/craftopia.png";
+import expenseTracker from "@/public/expenseTracker.png";
+import cocktailDB from "@/public/cocktaildb.png";
+
 export const links = [
     {
         name: "Home",
@@ -61,25 +65,25 @@ export const experiencesData = [
 
 export const projectsData = [
     {
-        title: "CorpComment",
+        title: "Expense Tracker",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        imageUrl: corpcommentImg,
+            "An efficient expense tracker app built using React, Chart.js, and Material UI. Easily manage your finances, visualize spending patterns.",
+        tags: ["React", "Chart.js", "Material UI", "Speechly", "JavaScript"],
+        imageUrl: expenseTracker,
     },
     {
-        title: "rmtDev",
+        title: "CocktailDB",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: rmtdevImg,
+            "A cocktail discovery app that I've crafted. It's your gateway to cocktail recipes, ingredients, and mixing instructions from around the world.",
+        tags: ["React", "JavaScript", "Ract-dom", "Api"],
+        imageUrl: cocktailDB,
     },
     {
-        title: "Word Analytics",
+        title: "Craftopia (Ecom)",
         description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: wordanalyticsImg,
+            "An ecommerce application where handcrafted wonders come to life. Explore and shop unique, handmade products crafted with care and creativity.",
+        tags: ["Node.js", "mongodb", "OAuth", "Express", "Firebase", "Razorpay"],
+        imageUrl: craftopia,
     },
 ] as const;
 
