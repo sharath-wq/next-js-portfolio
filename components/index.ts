@@ -9,5 +9,19 @@ import Experience from "./experience";
 import Contact from "./contact";
 import SubmitBtn from "./submit-btn";
 import Footer from "./footer";
+import ThemeSwitch from "./theme-switch";
 
-export { Header, Intro, SectionDivider, About, Projects, Project, Skills, Experience, Contact, SubmitBtn, Footer };
+export {
+    Header,
+    Intro,
+    SectionDivider,
+    About,
+    Projects,
+    Project,
+    Skills,
+    Experience,
+    Contact,
+    SubmitBtn,
+    Footer,
+    ThemeSwitch,
+};
