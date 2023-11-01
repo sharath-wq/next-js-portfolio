@@ -32,3 +32,12 @@ export interface ContactFormEmailProps {
 }
 
 export type Theme = "light" | "dark";
+
+export interface ThemeContextProviderProps {
+    children: React.ReactNode;
+}
+
+export interface ThemeContextType {
+    theme: Theme;
+    toggleTheme: () => void;
+}
