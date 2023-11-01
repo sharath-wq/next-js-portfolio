@@ -1,4 +1,4 @@
-import { Header } from "@/components";
+import { Footer, Header } from "@/components";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import ActiveSectionContextProvider from "@/context/active-section-context";
@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <ActiveSectionContextProvider>
                     <Header />
                     {children}
+                    <Footer />
                     <Toaster position="top-right" />
                 </ActiveSectionContextProvider>
             </body>
