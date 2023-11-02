@@ -1,10 +1,10 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import { FaLaptopCode } from "react-icons/fa";
+
+import craftopia from "@/public/craftopia.png";
+import expenseTracker from "@/public/expenseTracker.png";
+import cocktailDB from "@/public/cocktaildb.png";
 
 export const links = [
     {
@@ -35,51 +35,47 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Graduated bootcamp",
-        location: "Miami, FL",
-        description: "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+        title: "Brocamp Self Learning Program",
+        location: "Brototype, Kochi",
+        description:
+            "Brocamp is a 7 months intensive inhouse training program exclusively for people who are willing to do the hard work to build a high paying software engineering career.",
+        icon: React.createElement(FaLaptopCode),
+        date: "2023 - Present",
+    },
+    {
+        title: "Bachelor of Computer Application",
+        location: "Don Bosco College, Thrisur",
+        description:
+            "BCA is a three-year undergraduate degree focusing on computer science and IT, preparing graduates for software development, web development, and system administration careers.",
         icon: React.createElement(LuGraduationCap),
-        date: "2019",
-    },
-    {
-        title: "Front-End Developer",
-        location: "Orlando, FL",
-        description:
-            "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-        icon: React.createElement(CgWorkAlt),
-        date: "2019 - 2021",
-    },
-    {
-        title: "Full-Stack Developer",
-        location: "Houston, TX",
-        description:
-            "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-        icon: React.createElement(FaReact),
-        date: "2021 - present",
+        date: "2020 - 2023",
     },
 ] as const;
 
 export const projectsData = [
     {
-        title: "CorpComment",
+        title: "Expense Tracker",
         description:
-            "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-        tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-        imageUrl: corpcommentImg,
+            "An efficient expense tracker app built using React, Chart.js, and Material UI. Easily manage your finances, visualize spending patterns.",
+        tags: ["React", "Chart.js", "Material UI", "Speechly", "JavaScript"],
+        hostedLink: "https://gleeful-bavarois-5ef118.netlify.app/",
+        imageUrl: expenseTracker,
     },
     {
-        title: "rmtDev",
+        title: "CocktailDB",
         description:
-            "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-        tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-        imageUrl: rmtdevImg,
+            "A cocktail discovery app that I've crafted. It's your gateway to cocktail recipes, ingredients, and mixing instructions from around the world.",
+        tags: ["React", "JavaScript", "Ract-dom", "Api"],
+        hostedLink: "https://objective-fermat-00e719.netlify.app/",
+        imageUrl: cocktailDB,
     },
     {
-        title: "Word Analytics",
+        title: "Craftopia (Ecom)",
         description:
-            "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-        tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-        imageUrl: wordanalyticsImg,
+            "An ecommerce application where handcrafted wonders come to life. Explore and shop unique, handmade products crafted with care and creativity.",
+        tags: ["Node.js", "mongodb", "OAuth", "Express", "Firebase", "Razorpay"],
+        hostedLink: "https://craftopia.scportfolio.online/",
+        imageUrl: craftopia,
     },
 ] as const;
 
@@ -92,6 +88,10 @@ export const skillsData = [
     "Next.js",
     "Node.js",
     "Git",
+    "Speechly",
+    "OAuth",
+    "Firebase",
+    "Razorpay",
     "Tailwind",
     "MongoDB",
     "Redux",

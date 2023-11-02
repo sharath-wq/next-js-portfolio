@@ -11,6 +11,7 @@ export interface ProjectProps {
     description: string;
     tags: readonly string[];
     imageUrl: StaticImageData;
+    hostedLink: string;
 }
 
 export type SectionName = (typeof links)[number]["name"];
