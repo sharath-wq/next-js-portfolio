@@ -80,7 +80,7 @@ const Intro = () => {
                     Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
                 </Link>
                 <a
-                    href='https://drive.google.com/file/d/16vGXlMxORsUSPGolbjMsJpVVBMWBB0Ak/view?usp=share_link'
+                    href='https://drive.google.com/file/d/1r-R832qhysbXK9lqe2EMr94snHEYEL2m/view?usp=share_link'
                     download
                     className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10'
                 >
