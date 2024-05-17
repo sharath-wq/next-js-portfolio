@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
 import { FaGithubSquare } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
 
@@ -56,7 +57,7 @@ const Intro = () => {
             >
                 <span className='font-bold'>Hello, I'am Sharath Chandran.</span> I'am a{' '}
                 <span className='font-bold'>self-taught </span>
-                <span className='font-bold'>full-stack developer</span> form India. I enjoy building{' '}
+                <span className='font-bold'>mern-stack developer</span> form India. I enjoy building{' '}
                 <span className='italic'>sites & apps</span>. My focus is{' '}
                 <span className='underline'>React (Next.js), Node.js</span>.
             </motion.h1>
@@ -80,7 +81,7 @@ const Intro = () => {
                     Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
                 </Link>
                 <a
-                    href='https://drive.google.com/file/d/1r-R832qhysbXK9lqe2EMr94snHEYEL2m/view?usp=share_link'
+                    href='https://drive.google.com/file/d/1WULfZn0ZD7am2gM2cYdS6DDUnO-AByJh/view?usp=sharing'
                     download
                     className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10'
                 >
@@ -88,7 +89,7 @@ const Intro = () => {
                 </a>
                 <div className='flex gap-2'>
                     <a
-                        href='https://www.linkedin.com/in/sharath-chandran-aa827b201/'
+                        href='https://www.linkedin.com/in/sharathchandranp/'
                         target='_blank'
                         className='bg-white p-4 flex items-center text-gray-700 gap-2 rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
                     >
@@ -100,6 +101,13 @@ const Intro = () => {
                         className='bg-white p-4 flex items-center text-gray-700 gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
                     >
                         <FaGithubSquare />
+                    </a>
+                    <a
+                        href='https://leetcode.com/u/chandranpsharath/'
+                        target='_blank'
+                        className='bg-white p-4 flex items-center text-gray-700 gap-2 text-[1.35rem] rounded-full outline-none focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950  active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60'
+                    >
+                        <SiLeetcode />
                     </a>
                 </div>
             </motion.div>

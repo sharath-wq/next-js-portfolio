@@ -1,6 +1,6 @@
-import { links } from "@/lib/data";
-import { StaticImageData } from "next/image";
-import { ReactNode, SetStateAction } from "react";
+import { links } from '@/lib/data';
+import { StaticImageData } from 'next/image';
+import { ReactNode, SetStateAction } from 'react';
 
 export interface SectionHeaderProps {
     text: string;
@@ -12,9 +12,10 @@ export interface ProjectProps {
     tags: readonly string[];
     imageUrl: StaticImageData;
     hostedLink: string;
+    githubLink: string;
 }
 
-export type SectionName = (typeof links)[number]["name"];
+export type SectionName = (typeof links)[number]['name'];
 
 export interface ActiveSectionContextProviderProps {
     children: ReactNode;
@@ -32,7 +33,7 @@ export interface ContactFormEmailProps {
     senderEmail: string;
 }
 
-export type Theme = "light" | "dark";
+export type Theme = 'light' | 'dark';
 
 export interface ThemeContextProviderProps {
     children: React.ReactNode;
