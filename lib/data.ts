@@ -59,7 +59,7 @@ export const projectsData = [
         title: 'XSocial',
         description:
             'A social media app with real-time chat, video calls, and interactive posts. Built with Next.js and microservices for seamless, real-time engagement.',
-        tags: ['Node.js', 'Next.js', 'TailwindCSS', 'ShadCn', 'Express.js', 'MongoDB', 'Socket.io'],
+        tags: ['Node.js', 'Next.js', 'TailwindCSS', 'ShadCn', 'Express.js', 'Socket.io'],
         githubLink: 'https://github.com/sharath-wq/xsocial-prod.git',
         hostedLink: 'https://www.scportfolio.online',
         imageUrl: xsocial,
